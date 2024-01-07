@@ -12,9 +12,13 @@ const historyItem = props => {
     <li className="each-list-item">
       <div className="image-time-container">
         <p className="each-item-time">{timeAccessed}</p>
-        <img src={logoUrl} alt="domain logo" className="item-logo" />
-        <p className="item-heading">{title}</p>
-        <p className="item-domain-url">{domainUrl}</p>
+        <div className="logo-heading-container">
+          <img src={logoUrl} alt="domain logo" className="item-logo" />
+          <div className="heading-domain-container">
+            <p className="item-heading">{title}</p>
+            <p className="item-domain-url">{domainUrl}</p>
+          </div>
+        </div>
       </div>
       <button
         type="button"
